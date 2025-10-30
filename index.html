@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="theme-toggle">
+        <button id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <div class="container">
+        <h1>Task List <span class="subtitle">You Can Do IT</span></h1>
+        <div class="input-section">
+            <div class="input-wrapper">
+                <i class="fas fa-tasks"></i>
+                <input type="text" id="itemInput" placeholder="What's on your mind?">
+            </div>
+            <button id="addButton">
+                <i class="fas fa-plus"></i>
+                <span>Add Task</span>
+            </button>
+        </div>
+        <div class="list-container">
+            <ul id="itemList">
+                <!-- Items will be added here dynamically -->
+            </ul>
+            <div class="empty-state hidden">
+                <i class="fas fa-clipboard-check"></i>
+                <p>No tasks yet! Add one to get started.</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
